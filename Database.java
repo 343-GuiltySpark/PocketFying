@@ -9,7 +9,7 @@ public class Database {
     public Database() {
     	 try {
     	     Class.forName("com.mysql.jdbc.Driver");
-    	     connection = DriverManager.getConnection("jdbc:mysql://66.6.115.212:1433/var/lib/mysql/am_packetLayer/", "root", "NCAPSSQLison#1");
+    	     connection = DriverManager.getConnection("jdbc:mysql://66.6.115.212:443/var/lib/mysql/am_packetLayer/", "root", "NCAPSSQLison#1");
     	     statement = connection.createStatement();
     	 } catch (Exception ex) {
     	     System.out.println("Error: " + ex);
